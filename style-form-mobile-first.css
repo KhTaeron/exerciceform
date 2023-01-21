@@ -1,0 +1,381 @@
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    overflow-x: hidden;
+
+}
+
+/*-----MOBILE----------*/
+/*----- MENU COLUMN ---*/
+
+main{
+    background-color: #F3F4F6;
+}
+
+
+.col ul {
+    background-color: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 26%;
+    margin: auto;
+    list-style: none;
+    padding: 24px 8px 24px 8px;
+}
+
+
+
+.col ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    padding: 0.7em 2em 0.7em 15px ; /* top right bottom left */
+}
+
+.col ul li:first-of-type{
+    background-color: white;
+
+}
+
+.col ul li:first-of-type a{
+    color: #4338CA;
+}
+
+.col ul li.active{
+     background-color: white;
+}
+
+.col ul li.active a{
+    color: #4338CA;
+}
+
+
+.col-icon{
+    width: 18px;
+    height: 18px;
+    padding: 11px;
+}
+
+.colbtn{
+    border-radius: 6px;
+    display: flex;
+    flex: 0 0 40px;
+    width: 95.75%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color:transparent;
+    border-color: transparent;
+    
+
+}
+
+.team{
+    width: 20px;
+    height: 16px;
+    padding: 9px;
+}
+
+.billing{
+    height: 14px;
+}
+
+/*----- FORMULAIRE ---*/
+
+.right{
+    width: 100%;
+   
+}
+
+.formulaire{  
+
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    height: 74%;
+    
+    padding: 24px 8px 24px 8px;
+
+}
+
+.header-form{
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 100%;
+    height: 6.7%;
+    display: block;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6B7280;
+}
+.title-form{
+    font-size: 18px;
+    margin-top: 0;
+    color: black;
+}
+
+.form-content{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pseudo{
+    display: flex;
+}
+
+.pseudo input{
+    width: 100%;
+    height: 42px;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid #D1D5DB; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-left: none;
+}
+.workcaption{
+    max-width: 151px;
+    max-height: 42px;
+    background-color: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px 0px 0px 6px;
+    padding: 9px 13px 9px 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6B7280;
+}
+
+.form-content form{
+    width: 94.8%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+form label{
+    line-height: 20px;
+    font-weight: bold;
+    color: #374151;
+    margin-bottom: 4px;
+}
+
+label[for="about"]{
+    margin-top: 24px;
+    
+}
+textarea{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    padding: 13px 9px 13px 9px;
+    height: 105px;
+    border: 1px solid #D1D5DB; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    color: #6B7280;
+}
+
+.helpabout{
+    margin-top: 8px;
+    color: #6B7280;
+}
+
+/*----- FORMULAIRE PHOTOS---*/
+
+
+
+/*Avatar*/
+.photo{
+    display: flex;
+
+    margin-bottom: 24px;
+}
+
+label[for="upload"]{
+    margin-top: 24px;
+    
+}
+
+.uploadavatar input[type="file"] {
+    position: absolute;
+    top: -100000px;
+  }
+
+.uploadavatar {
+    cursor: pointer;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    background: #FFFFFF;
+    display: flex;
+    margin-left: 20px;
+    width: 78px;
+    height: 34px;
+  }
+
+.avatar{
+    
+    width: 48px;
+    height: 48px;
+}
+
+/*Cover*/
+
+.coverphoto input[type="file"] {
+    cursor: pointer;
+    opacity: 0;
+    height: 140px;
+    width: 100%;
+  }
+
+.coverphoto{
+    height: 140px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='6' ry='6' stroke='%23D1D5DBFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='30' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.coverform{
+    width: 100%;
+    z-index: 1;
+    
+    position: absolute;
+
+}
+
+.helpform{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6B7280;
+  
+   
+}
+
+.helpform p{
+    color: #4B5563;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.helpform span{
+    color: #4F46E5;
+    cursor: pointer;
+}
+.imgpath{
+    width: 36px;
+    height: 36px;
+}
+
+/*----FOOTER------*/
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #F9FAFB;
+    margin:auto;
+    width: 100%;
+    height: 8.3%; 
+}
+
+.footer input{
+    margin-right: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: white;
+    width: 67px;
+    height: 38px;
+    background-color: #4F46E5;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+/*---- VERSION DESKTOP ------*/
+
+@media screen and (min-width: 960px ){
+
+    main{
+        display: flex;
+    }
+
+    .col {
+        margin-left: 32px;
+        margin-top: 24px;
+    }
+
+    .col ul {
+        padding: 0;
+    }
+    
+    .col ul li{
+        width: 289px;
+    }
+    .header-form{
+        margin-left: 20px;
+        margin-top: 24px;
+    }
+
+    .right{
+        width: 75%;
+        height: 93%;
+        margin-right: 32px;
+}
+    .formulaire{
+        padding-bottom: 24px;
+        padding: 0%;
+        width: 100%;
+        max-height: 697px;
+        margin-left: 1.5625%;
+        margin-top:24px;
+        border-bottom: none;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+        border-radius: 8px 8px 0px 0px ; /* topright lefttop leftbot botright*/
+    }
+
+    .pseudo input{
+        width: 430px;
+        height: 38px;
+    }
+
+    .form-content form{
+        margin-left: 24px;
+        margin-right: 24px;
+       
+    }
+
+    textarea{
+        height: 93px;
+    }
+
+    .footer{
+        
+        margin-left: 1.5625%;
+        margin-right: 32px;
+        margin-bottom: 24px;
+        width: 100%;
+        
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+        border-radius: 0px 0px 8px 8px ;
+    }
+
+    .footer input{
+        margin-right: 34px;
+    }
+}

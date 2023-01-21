@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Exercice recrutement Bearstudio</title>
+    <link href="style-form-mobile-first.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <nav class="col">
+        <ul>
+            <li class="Account"><button class="colbtn"><img class="col-icon" src="img/Icon.png" alt="icon-profile"><a href="#">Account</a></button></li>
+            <li class="Password"><button class="colbtn"><img class="col-icon" src="img/password.png" alt="icon-password"><a href="#">Password</a></button></li>
+            <li class="PlanBilling"><button class="colbtn"><img class="col-icon billing" src="img/PlanBilling.png" alt="icon-planbilling"><a href="#">Plan & Billing</a></button></li>
+            <li class="Team"><button class="colbtn"><img class="col-icon team" src="img/Team.png" alt="icon-team"><a href="#">Team</a></button></li>
+            <li class="Integrations"><button class="colbtn"><img class="col-icon integrations" src="img/Integrations.png" alt="icon-integrations"><a href="#">Integrations</a></button></li>
+        </ul>
+    </nav>
+
+    <div class="right">
+    <div class="formulaire">
+        <span class="header-form"><h1 class="title-form">Profile</h1>This information will be displayed publicly so be careful what you share.</span>
+
+    <div class="form-content">
+    <form action="">
+        
+        <label for="username">Username</label>
+        <div class="pseudo"><div class="workcaption">workcation.com/</div><input type="text" name="pseudo" id="pseudo" /></div>
+        <label for="about">About</label>
+        <textarea name="about" id="about">you@example.com</textarea>
+        <span class=helpabout>Brief description for your profile. URLs are hyperlinked. </span>
+        
+        <label for='upload'>Photo</label>
+
+        <div class="photo">
+            <img class="avatar" src="./img/Avatar.png" alt="Avatar">
+        <label class="uploadavatar">
+              <input type="file" name="uploadavatar[]" id="uploadavatar" accept="image/jpeg, image/png, image/gif" >
+              <span>Change</span>
+        </label>
+        </div>
+
+        <label for="cover">Cover photo</label>
+        <div class="coverphoto"> 
+            <div class="coverform">
+            <input type="hidden" name="MAX_FILE_SIZE" value="10000000" />
+            <input type="file" name="uploadcover[]" id="uploadcover" accept="image/jpeg, image/png, image/gif" ></div><div class="helpform"><img class="imgpath" src="img/Path.png" alt="path"><p><span>Upload a file</span> or drag and drop</p>PNG, JPG, GIF up to 10MB</div>
+        </div>
+    
+    </div>
+
+</div>
+    <div class="footer"><input type="submit" name="save" value="Save" /></div></form> </div>
+</main>
+</body>
+</html>
